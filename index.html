@@ -1,0 +1,1008 @@
+</div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-title">
+                <h2>Kundenstimmen</h2>
+                <p>Was unsere Kunden über uns sagen</p>
+            </div>
+            <div class="testimonial-slider">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"Die modularen Service-Bausteine von TTSM Solutions haben uns die Flexibilität gegeben, die wir brauchten. Besonders das KI-Telefon hat unsere Mitarbeiter enorm entlastet und die Kundenzufriedenheit verbessert."</p>
+                    <div class="testimonial-author">
+                        <img src="/api/placeholder/50/50" alt="Dr. Lisa Schmidt" />
+                        <div class="author-info">
+                            <h4>Dr. Lisa Schmidt</h<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TTSM Solutions | Modulare Service Bausteine</title>
+    <style>
+        :root {
+            --primary: #2c3e50;
+            --secondary: #3498db;
+            --accent: #e74c3c;
+            --light: #ecf0f1;
+            --dark: #2c3e50;
+            --text: #333333;
+            --text-light: #7f8c8d;
+            --success: #27ae60;
+            --shadow: rgba(0, 0, 0, 0.1);
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+        
+        body {
+            background-color: #fff;
+            color: var(--text);
+            line-height: 1.6;
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+            color: var(--dark);
+        }
+        
+        p {
+            margin-bottom: 1rem;
+        }
+        
+        a {
+            color: var(--secondary);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        a:hover {
+            color: var(--primary);
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 0.8rem 1.5rem;
+            background-color: var(--secondary);
+            color: white;
+            border-radius: 4px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .btn:hover {
+            background-color: var(--primary);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px var(--shadow);
+        }
+        
+        .btn-outline {
+            background-color: transparent;
+            border: 2px solid var(--secondary);
+            color: var(--secondary);
+        }
+        
+        .btn-outline:hover {
+            background-color: var(--secondary);
+            color: white;
+        }
+        
+        /* Header */
+        header {
+            background-color: white;
+            box-shadow: 0 2px 10px var(--shadow);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+        }
+        
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary);
+        }
+        
+        .logo span {
+            color: var(--secondary);
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        
+        nav ul li {
+            margin-left: 2rem;
+        }
+        
+        nav ul li a {
+            color: var(--text);
+            font-weight: 500;
+            position: relative;
+        }
+        
+        nav ul li a:hover {
+            color: var(--secondary);
+        }
+        
+        nav ul li a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: var(--secondary);
+            transition: width 0.3s ease;
+        }
+        
+        nav ul li a:hover::after {
+            width: 100%;
+        }
+        
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: var(--primary);
+        }
+        
+        /* Hero Section */
+        .hero {
+            padding: 10rem 0 5rem;
+            background-color: var(--light);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        .hero-text {
+            flex: 1;
+            max-width: 600px;
+        }
+        
+        .hero-title {
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .hero-subtitle {
+            font-size: 1.2rem;
+            color: var(--text-light);
+            margin-bottom: 2rem;
+        }
+        
+        .hero-image {
+            flex: 1;
+            display: flex;
+            justify-content: flex-end;
+        }
+        
+        .hero-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 10px 30px var(--shadow);
+        }
+        
+        /* Services Section */
+        .services {
+            padding: 5rem 0;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        
+        .section-title h2 {
+            font-size: 2.5rem;
+            position: relative;
+            display: inline-block;
+        }
+        
+        .section-title h2::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 50px;
+            height: 3px;
+            background-color: var(--secondary);
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .service-card {
+            background-color: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px var(--shadow);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px var(--shadow);
+        }
+        
+        .service-icon {
+            background-color: var(--light);
+            padding: 2rem;
+            text-align: center;
+        }
+        
+        .service-icon i {
+            font-size: 3rem;
+            color: var(--secondary);
+        }
+        
+        .service-content {
+            padding: 2rem;
+        }
+        
+        .service-title {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        /* About Section */
+        .about {
+            padding: 5rem 0;
+            background-color: var(--light);
+        }
+        
+        .about-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 4rem;
+        }
+        
+        .about-image {
+            flex: 1;
+        }
+        
+        .about-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 10px 30px var(--shadow);
+        }
+        
+        .about-text {
+            flex: 1;
+        }
+        
+        /* Portfolio Section */
+        .portfolio {
+            padding: 5rem 0;
+        }
+        
+        .portfolio-filter {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 2rem;
+        }
+        
+        .filter-btn {
+            padding: 0.5rem 1rem;
+            margin: 0 0.5rem;
+            background-color: white;
+            border: 1px solid var(--light);
+            border-radius: 4px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .filter-btn.active, .filter-btn:hover {
+            background-color: var(--secondary);
+            color: white;
+        }
+        
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .portfolio-item {
+            position: relative;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px var(--shadow);
+        }
+        
+        .portfolio-item img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.3s ease;
+        }
+        
+        .portfolio-item:hover img {
+            transform: scale(1.05);
+        }
+        
+        .portfolio-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(44, 62, 80, 0.8);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            padding: 1.5rem;
+            color: white;
+            text-align: center;
+        }
+        
+        .portfolio-item:hover .portfolio-overlay {
+            opacity: 1;
+        }
+        
+        .portfolio-title {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        /* Testimonials */
+        .testimonials {
+            padding: 5rem 0;
+            background-color: var(--light);
+        }
+        
+        .testimonial-slider {
+            display: flex;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            scroll-behavior: smooth;
+            -webkit-overflow-scrolling: touch;
+            scrollbar-width: none; /* Firefox */
+            gap: 2rem;
+            padding: 1rem 0;
+        }
+        
+        .testimonial-slider::-webkit-scrollbar {
+            display: none; /* Chrome, Safari and Opera */
+        }
+        
+        .testimonial-card {
+            min-width: 300px;
+            flex: 0 0 calc(33.333% - 2rem);
+            scroll-snap-align: start;
+            background-color: white;
+            border-radius: 8px;
+            padding: 2rem;
+            box-shadow: 0 5px 15px var(--shadow);
+            position: relative;
+        }
+        
+        .testimonial-card::before {
+            content: '"';
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            font-size: 4rem;
+            color: var(--light);
+            line-height: 1;
+            font-family: serif;
+        }
+        
+        .testimonial-text {
+            margin-bottom: 1.5rem;
+            font-style: italic;
+        }
+        
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+        }
+        
+        .testimonial-author img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-right: 1rem;
+        }
+        
+        .author-info h4 {
+            margin-bottom: 0.2rem;
+        }
+        
+        .author-info p {
+            color: var(--text-light);
+            font-size: 0.9rem;
+            margin-bottom: 0;
+        }
+        
+        /* Contact Section */
+        .contact {
+            padding: 5rem 0;
+        }
+        
+        .contact-container {
+            display: flex;
+            gap: 4rem;
+            align-items: flex-start;
+        }
+        
+        .contact-info {
+            flex: 1;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 1.5rem;
+        }
+        
+        .contact-icon {
+            flex: 0 0 40px;
+            font-size: 1.5rem;
+            color: var(--secondary);
+            margin-top: 5px;
+        }
+        
+        .contact-text {
+            flex: 1;
+        }
+        
+        .contact-form {
+            flex: 1;
+            background-color: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px var(--shadow);
+        }
+        
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        
+        .form-control {
+            display: block;
+            width: 100%;
+            padding: 0.8rem;
+            font-size: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            transition: border 0.3s ease;
+        }
+        
+        .form-control:focus {
+            outline: none;
+            border-color: var(--secondary);
+        }
+        
+        textarea.form-control {
+            min-height: 150px;
+        }
+        
+        /* CTA Section */
+        .cta {
+            padding: 5rem 0;
+            background-color: var(--primary);
+            color: white;
+            text-align: center;
+        }
+        
+        .cta h2 {
+            color: white;
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .cta p {
+            max-width: 600px;
+            margin: 0 auto 2rem;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: var(--dark);
+            color: white;
+            padding: 4rem 0 2rem;
+        }
+        
+        .footer-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+        }
+        
+        .footer-logo {
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: white;
+        }
+        
+        .footer-logo span {
+            color: var(--secondary);
+        }
+        
+        .footer-social {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+        
+        .social-link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            color: white;
+            transition: all 0.3s ease;
+        }
+        
+        .social-link:hover {
+            background-color: var(--secondary);
+            transform: translateY(-3px);
+        }
+        
+        .footer-title {
+            font-size: 1.2rem;
+            margin-bottom: 1.5rem;
+            color: white;
+        }
+        
+        .footer-links ul {
+            list-style: none;
+        }
+        
+        .footer-links ul li {
+            margin-bottom: 0.8rem;
+        }
+        
+        .footer-links ul li a {
+            color: rgba(255, 255, 255, 0.7);
+            transition: color 0.3s ease;
+        }
+        
+        .footer-links ul li a:hover {
+            color: var(--secondary);
+        }
+        
+        .footer-contact p {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+            color: rgba(255, 255, 255, 0.7);
+        }
+        
+        .footer-contact p i {
+            margin-right: 0.5rem;
+            color: var(--secondary);
+        }
+        
+        .footer-bottom {
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            text-align: center;
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 0.9rem;
+        }
+        
+        /* Cookie Banner */
+        .cookie-banner {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: white;
+            box-shadow: 0 -5px 15px var(--shadow);
+            padding: 1.5rem 2rem;
+            z-index: 9999;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            transform: translateY(100%);
+            transition: transform 0.3s ease;
+        }
+        
+        .cookie-banner.show {
+            transform: translateY(0);
+        }
+        
+        .cookie-text {
+            flex: 1;
+            margin-right: 2rem;
+        }
+        
+        .cookie-actions {
+            display: flex;
+            gap: 1rem;
+        }
+        
+        /* Modal */
+        .modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 9999;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+        }
+        
+        .modal.show {
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        .modal-content {
+            background-color: white;
+            border-radius: 8px;
+            max-width: 800px;
+            width: 100%;
+            max-height: 90vh;
+            overflow-y: auto;
+            box-shadow: 0 10px 30px var(--shadow);
+            transform: translateY(-20px);
+            transition: transform 0.3s ease;
+        }
+        
+        .modal.show .modal-content {
+            transform: translateY(0);
+        }
+        
+        .modal-header {
+            padding: 1.5rem 2rem;
+            border-bottom: 1px solid #eee;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        
+        .modal-title {
+            font-size: 1.5rem;
+            margin-bottom: 0;
+        }
+        
+        .modal-close {
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: var(--text-light);
+            transition: color 0.3s ease;
+        }
+        
+        .modal-close:hover {
+            color: var(--accent);
+        }
+        
+        .modal-body {
+            padding: 2rem;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 992px) {
+            .hero-content, .about-content, .contact-container {
+                flex-direction: column;
+                gap: 2rem;
+            }
+            
+            .hero-image, .about-image {
+                order: -1;
+            }
+            
+            .testimonial-card {
+                flex: 0 0 calc(50% - 2rem);
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .header-container {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            
+            nav {
+                width: 100%;
+                margin-top: 1rem;
+            }
+            
+            nav ul {
+                flex-direction: column;
+            }
+            
+            nav ul li {
+                margin-left: 0;
+                margin-bottom: 0.5rem;
+            }
+            
+            .mobile-menu-btn {
+                display: block;
+                position: absolute;
+                top: 1.5rem;
+                right: 2rem;
+            }
+            
+            .testimonial-card {
+                flex: 0 0 calc(100% - 2rem);
+            }
+        }
+    </style>
+    <!-- Import Font Awesome for icons (CDN) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-container container">
+            <div class="logo">TTSM<span>Solutions</span></div>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav id="mainNav">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Leistungen</a></li>
+                    <li><a href="#about">Über uns</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">Modulare Service Bausteine für Ihren digitalen Erfolg</h1>
+                <p class="hero-subtitle">Flexible und individuell kombinierbare Dienstleistungen für Ihre Online-Präsenz und Kundeninteraktion</p>
+                <div class="hero-buttons">
+                    <a href="#services" class="btn">Unsere Leistungen</a>
+                    <a href="#contact" class="btn btn-outline">Kontakt aufnehmen</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="/api/placeholder/600/400" alt="TTSM Solutions Service Bausteine" />
+                <!-- Hier könnte ein Bild mit modularen Bausteinen oder Business-Personen sein, die zusammenarbeiten -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-title">
+                <h2>Unsere Service Bausteine</h2>
+                <p>Individuell kombinierbar oder als Gesamtpaket erhältlich</p>
+            </div>
+            <div class="services-grid">
+                <!-- Service 1 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title">Website Erstellung & Pflege</h3>
+                        <p>Professionelle Webseiten mit modernem Design und optimaler Benutzerfreundlichkeit. Inklusive kontinuierlicher Wartung und Support.</p>
+                        <a href="#" class="btn btn-outline" onclick="openModal('websiteModal')">Mehr erfahren</a>
+                    </div>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title">Branding</h3>
+                        <p>Entwicklung einer unverwechselbaren Markenidentität mit Logo, Farbschema, Typografie und visueller Sprache, die Ihr Unternehmen repräsentiert.</p>
+                        <a href="#" class="btn btn-outline" onclick="openModal('brandingModal')">Mehr erfahren</a>
+                    </div>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title">Brandmanagement</h3>
+                        <p>Umfassende SEO-Optimierung, Google My Business Pflege und gezielte Werbekampagnen für maximale Sichtbarkeit Ihrer Marke.</p>
+                        <a href="#" class="btn btn-outline" onclick="openModal('brandManagementModal')">Mehr erfahren</a>
+                    </div>
+                </div>
+                
+                <!-- Service 4 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-share-alt"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title">Social Media Marketing</h3>
+                        <p>Professionelle Erstellung und Verwaltung von Social Media Content: Reels, Bilder, Posts und strategisches Management Ihrer Online-Präsenz.</p>
+                        <a href="#" class="btn btn-outline" onclick="openModal('socialMediaModal')">Mehr erfahren</a>
+                    </div>
+                </div>
+                
+                <!-- Service 5 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <div class="service-content">
+                        <h3 class="service-title">KI-Telefon</h3>
+                        <p>Innovative KI-Lösung zur Entlastung Ihrer Mitarbeiter: automatische Terminvergabe, Buchungen, Reservierungen und Beantwortung häufiger Fragen.</p>
+                        <a href="#" class="btn btn-outline" onclick="openModal('aiPhoneModal')">Mehr erfahren</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-title">
+                <h2>Über uns</h2>
+                <p>Lernen Sie TTSM Solutions kennen</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Ihr Partner für modulare digitale Lösungen</h3>
+                    <p>TTSM Solutions wurde von zwei erfahrenen Digital-Experten gegründet, mit der Vision, Unternehmen modulare und flexible Service-Bausteine anzubieten, die genau auf ihre Bedürfnisse zugeschnitten sind.</p>
+                    <p>Unser Ansatz ist einfach: Sie zahlen nur für die Leistungen, die Sie wirklich benötigen, und können diese jederzeit flexibel kombinieren oder erweitern. So erhalten Sie eine maßgeschneiderte Lösung ohne unnötige Kosten.</p>
+                    <p>Wir verstehen die Herausforderungen moderner Unternehmen und helfen Ihnen, im digitalen Zeitalter erfolgreich zu sein - mit klarem Fokus auf Mehrwert, Innovation und Kundenzufriedenheit.</p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <h4>100+</h4>
+                            <p>Zufriedene Kunden</p>
+                        </div>
+                        <div class="stat">
+                            <h4>5+</h4>
+                            <p>Jahre Erfahrung</p>
+                        </div>
+                        <div class="stat">
+                            <h4>250+</h4>
+                            <p>Abgeschlossene Projekte</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="/api/placeholder/500/350" alt="Das TTSM Solutions Team" />
+                    <!-- Hier könnte ein Bild des Teams sein -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="section-title">
+                <h2>Portfolio</h2>
+                <p>Einblicke in unsere bisherigen Projekte</p>
+            </div>
+            <div class="portfolio-filter">
+                <button class="filter-btn active" data-filter="all">Alle</button>
+                <button class="filter-btn" data-filter="websites">Websites</button>
+                <button class="filter-btn" data-filter="branding">Branding</button>
+                <button class="filter-btn" data-filter="social">Social Media</button>
+                <button class="filter-btn" data-filter="ai">KI-Lösungen</button>
+            </div>
+            <div class="portfolio-grid">
+                <!-- Portfolio Item 1 -->
+                <div class="portfolio-item" data-category="websites">
+                    <img src="/api/placeholder/400/300" alt="Website-Projekt 1" />
+                    <!-- Hier ein Bild einer Unternehmenswebsite mit moderner Gestaltung -->
+                    <div class="portfolio-overlay">
+                        <h3 class="portfolio-title">Café Sonnenschein</h3>
+                        <p>Website-Erstellung & SEO-Optimierung</p>
+                        <a href="#" class="btn btn-outline" onclick="openModal('portfolio1Modal')">Details</a>
+                    </div>
+                </div>
+                
+                <!-- Portfolio Item 2 -->
+                <div class="portfolio-item" data-category="branding">
+                    <img src="/api/placeholder/400/300" alt="Branding-Projekt 1" />
+                    <!-- Hier ein Bild eines Branding-Projekts mit Logo und Corporate Design -->
+                    <div class="portfolio-overlay">
+                        <h3 class="portfolio-title">Beckmann Immobilien</h3>
+                        <p>Corporate Design & Branding</p>
+                        <a href="#" class="btn btn-outline" onclick="openModal('portfolio2Modal')">Details</a>
+                    </div>
+                </div>
+                
+                <!-- Portfolio Item 3 -->
+                <div class="portfolio-item" data-category="social">
+                    <img src="/api/placeholder/400/300" alt="Social Media Kampagne" />
+                    <!-- Hier ein Bild einer Social Media Kampagne -->
+                    <div class="portfolio-overlay">
+                        <h3 class="portfolio-title">Sporthaus Müller</h3>
+                        <p>Social Media Marketing & Content-Erstellung</p>
+                        <a href="#" class="btn btn-outline" onclick="openModal('portfolio3Modal')">Details</a>
+                    </div>
+                </div>
+                
+                <!-- Portfolio Item 4 -->
+                <div class="portfolio-item" data-category="ai">
+                    <img src="/api/placeholder/400/300" alt="KI-Telefon Implementation" />
+                    <!-- Hier ein Bild einer KI-Telefon Integration -->
+                    <div class="portfolio-overlay">
+                        <h3 class="portfolio-title">Praxis Dr. Schmidt</h3>
+                        <p>KI-Telefon zur Terminvergabe</p>
+                        <a href="#" class="btn btn-outline" onclick="openModal('portfolio4Modal')">Details</a>
+                    </div>
+                </div>
+                
+                <!-- Portfolio Item 5 -->
+                <div class="portfolio-item" data-category="websites">
+                    <img src="/api/placeholder/400/300" alt="Website-Projekt 2" />
+                    <!-- Hier ein Bild einer E-Commerce Website -->
+                    <div class="portfolio-overlay">
+                        <h3 class="portfolio-title">Naturkosmetik Wunderbar</h3>
+                        <p>Online-Shop & Content Management System</p>
+                        <a href="#" class="btn btn-outline" onclick="openModal('portfolio5Modal')">Details</a>
+                    </div>
+                </div>
+                
+                <!-- Portfolio Item 6 -->
+                <div class="portfolio-item" data-category="branding">
+                    <img src="/api/placeholder/400/300" alt="Branding-Projekt 2" />
+                    <!-- Hier ein Bild eines kompletten Rebrandings -->
+                    <div class="portfolio-overlay">
+                        <h3 class="portfolio-title">Altstadt Apotheke</h3>
+                        <p>Rebranding & Corporate Identity</p>
+                        <a href="#" class="btn btn-outline" onclick="openModal('portfolio6Modal')">Details</a>
+                    </div>
+                </div>
